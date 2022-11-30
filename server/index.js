@@ -8,6 +8,8 @@ const schema = require('./schema/schema');
 const app = express()
 const colors = require('colors');
 const connectDB = require('./config/db');
+const cors = require('cors');
+app.use(cors())
 
 connectDB()
 
